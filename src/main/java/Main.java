@@ -44,7 +44,6 @@ public class Main {
         return matches;
     }
 
-    // Method to fetch deliveries data from PostgreSQL 'deliveries' table
     public static List<Delivery> getDeliveriesData() {
         List<Delivery> deliveries = new ArrayList<>();
         try (Connection connection = DriverManager.getConnection(DB_URL, USER, PASS);
